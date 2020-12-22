@@ -55,7 +55,9 @@
         "webpack-dev-server": "^3.11.0"
     },
     "scripts": {
+        "prebuild": "npm i",
         "build": "rimraf app/dist && webpack --bail --progress --profile",
+        "prestart": "npm i",
         "start": "webpack serve --watch"
     }
 }
