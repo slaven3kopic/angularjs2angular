@@ -1,9 +1,6 @@
 {
-    "name": "angular-phonecat",
-    "private": true,
-    "version": "0.0.0",
-    "description": "A tutorial application for AngularJS",
-    "repository": "https://github.com/angular/angular-phonecat",
+    "name": "angularjs2angular",
+    "version": "0.1.0",
     "license": "MIT",
     "dependencies": {
         "@angular/animations": "^11.0.5",
