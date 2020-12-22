@@ -11,6 +11,8 @@ import './phone-list/index';
 import './app.module';
 import './app.config';
 
+import './imports.less';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { UpgradeModule } from '@angular/upgrade/static';
@@ -37,4 +39,6 @@ platformBrowserDynamic().bootstrapModule(AppModule).then(platformRef => {
     console.log("Bootstrapping both Angular and AngularJS");
     const upgrade = platformRef.injector.get(UpgradeModule) as UpgradeModule;
     upgrade.bootstrap(document.body, ['phonecatApp']);
+}).catch(e => {
+    console.error(e);
 });

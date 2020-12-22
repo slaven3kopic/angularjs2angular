@@ -22,6 +22,6 @@ class PhoneDetailController {
 angular.
 module('phoneDetail').
 component('phoneDetail', {
-    templateUrl: 'phone-detail/phone-detail.template.html',
+    template: require('./phone-detail.template.html').default,
     controller: PhoneDetailController
 });
